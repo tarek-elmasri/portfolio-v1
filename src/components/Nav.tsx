@@ -6,7 +6,7 @@ import styled, { css } from 'styled-components';
 import { navLinks } from '../config/navLinks';
 import { useScrollDirection } from '../hooks';
 import { navDelay } from '../utils/constants';
-import LogoIcon from './LogoIcon';
+import LogoIcon from './icons/LogoIcon';
 import Menu from './Menu';
 
 const StyledHeader = styled.header<{

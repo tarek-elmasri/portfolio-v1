@@ -1,4 +1,5 @@
 export const navDelay = 1000;
+export const sidesDelay = 2000;
 
 export const KEY_CODES = {
   ARROW_LEFT: 'ArrowLeft',
