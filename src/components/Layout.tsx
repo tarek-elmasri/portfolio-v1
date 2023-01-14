@@ -3,9 +3,11 @@ import { Location } from 'react-router';
 import styled, { ThemeProvider } from 'styled-components';
 
 import { GlobalStyles, theme } from '../styles';
+import Email from './Email';
 import Footer from './Footer';
 import Loader from './Loader';
 import Nav from './Nav';
+import Social from './Social';
 
 const StyledContent = styled.main`
   padding-inline: 2rem;
@@ -45,6 +47,13 @@ const Layout: React.FC<React.PropsWithChildren<{ location: Location }>> = ({
       ) : (
         <>
           <Nav isHome={isHome} />
+          {isHome && (
+            <>
+              <Social />
+              <Email />
+            </>
+          )}
+
           <StyledContent>{children}</StyledContent>
           <Footer />
         </>

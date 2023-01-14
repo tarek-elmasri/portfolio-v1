@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
 import styled from 'styled-components';
 
-import LogoIcon from './LogoIcon';
+import LogoIcon from './icons/LogoIcon';
 
 const StyledLoader = styled.div`
   min-height: 100vh;
