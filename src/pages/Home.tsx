@@ -1,6 +1,7 @@
 import { useLocation } from 'react-router';
 
 import Layout from '../components/Layout';
+import About from '../components/sections/About';
 import Hero from '../components/sections/Hero';
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
   return (
     <Layout location={location}>
       <Hero />
+      <About />
     </Layout>
   );
 };

@@ -166,6 +166,37 @@ const GlobalStyles = createGlobalStyle`
     }
   }
 
+  .text-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    font-family: var(--ff-prea);
+    font-size: var(--fz-heading);
+    color: var(--clr-neutral-100);
+
+    @media (min-width: 40em) {
+      flex-direction: row;
+    }
+
+    &::after {
+      content: '';
+      height: 1px;
+      width: 100%;
+      background-color: var(--shadow-secondary-400);
+      @media (min-width: 40em){
+        flex: 1;
+        margin-left: 2rem;
+        /* width: unset; */
+      }
+    }
+  }
+
+  section{
+    margin-bottom: 3rem;
+  }
+
 
   ${() => TransitionStyles}
 
