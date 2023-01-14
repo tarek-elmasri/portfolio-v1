@@ -194,7 +194,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   section{
-    margin-bottom: 3rem;
+    margin-bottom: 8rem;
   }
 
 

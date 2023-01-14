@@ -1,9 +1,11 @@
 import ScrollReveal from 'scrollreveal';
 
+import { revealDelay } from '../utils/constants';
+
 const isSSR = typeof window === 'undefined';
 export const sr = isSSR ? null : ScrollReveal();
 
-export const srConfig = (delay = 200, viewFactor = 0.25) => ({
+export const srConfig = (delay = revealDelay, viewFactor = 0.25) => ({
   origin: 'bottom',
   distance: '20px',
   duration: 500,
